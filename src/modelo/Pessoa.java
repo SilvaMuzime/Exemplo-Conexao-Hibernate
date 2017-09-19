@@ -24,6 +24,11 @@ public class Pessoa {
     @Id
     @GeneratedValue 
     private int id;
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "id=" + id + ", nome=" + nome + ", dataNascimento=" + dataNascimento + '}';
+    }
     
     @Column
     private String nome;

@@ -34,6 +34,11 @@ public class Estudante {
         return nome;
     }
 
+    @Override
+    public String toString() {
+        return "Estudante{" + "id=" + id + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", curso=" + curso + '}';
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -58,6 +63,10 @@ public class Estudante {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(long i) {
+        this.id=i;
     }
 
 
